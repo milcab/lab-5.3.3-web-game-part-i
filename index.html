@@ -6,6 +6,27 @@
                 flex-direction: row;
                 justify-content: space-evenly;
             }
+            .item {
+                padding: 10px;
+                cursor: pointer;
+                border: 0px solid orange;
+                border-radius: 30%;
+                animation: hover 1s infinite;
+            }
+            @keyframes hover {
+                0% {
+                    transform: translateY(0);
+                    border-width: 0px;
+                }
+                50% {
+                    border-width: 5px;
+                    transform: translateY(-10px);
+                }
+                100% {
+                    border-width: 0px;
+                    transform: translateY(0);
+                }
+            }
         </style>
     </head>
     <body>
